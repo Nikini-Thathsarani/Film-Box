@@ -1,0 +1,158 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0b0003;
+  color:white;
+}
+
+/* VIDEO */
+.bg-video{
+  position:fixed;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+}
+
+.video-overlay{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.85);
+  z-index:-1;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+}
+
+.logo{
+  font-size:26px;
+  font-weight:600;
+}
+
+.green{ color:#ff1e00; }
+.white{ color:white; }
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.nav-links a:hover,
+.active{
+  color:#ff1100;
+}
+
+.search{
+  padding:8px 15px;
+  border-radius:20px;
+  border:none;
+  background:#1a1a1a;
+  color:white;
+}
+
+/* HEADER */
+.page-header{
+  padding:40px 60px;
+}
+
+.page-header h1{
+  font-family:'Oswald',sans-serif;
+  font-size:50px;
+}
+
+/* GRID */
+.series-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:30px;
+  padding:40px 60px;
+}
+
+/* CARD */
+.series-card{
+  position:relative;
+  background:#111;
+  border-radius:12px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.series-card img{
+  width:100%;
+  height:380px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:15px;
+}
+
+.info{
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+  opacity:0.7;
+  margin:5px 0;
+}
+
+.rating{
+  color:#ff0000;
+  font-weight:600;
+}
+
+/* BADGES */
+.badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  padding:5px 10px;
+  font-size:12px;
+  border-radius:15px;
+}
+
+.trending{ background:#ff9900; }
+.top{ background:#ffd000; }
+.new{ background:#00c98d; }
+
+/* HOVER */
+.hover-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.8);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  opacity:0;
+  transition:0.3s;
+}
+
+.series-card:hover .hover-overlay{
+  opacity:1;
+}
+
+.details-btn{
+  padding:10px 20px;
+  background:#ff0000;
+  text-decoration:none;
+  color:black;
+  border-radius:6px;
+  font-weight:600;
+}

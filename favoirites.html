@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FilmBox</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="favorites.css">
+</head>
+<body>
+
+
+<video autoplay muted loop class="bg-video">
+  <source src="homepage.vid.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <span class="green">Film</span><span class="white">Box</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="Tv_Series.html">TV Shows</a></li>
+      <li><a class="active" href="#">Favourites</a></li>
+    </ul>
+
+    <input type="text" placeholder="Search..." class="search">
+  </nav>
+</header>
+
+
+<section class="page-header">
+  <h1><span class="green">My</span> Favourites</h1>
+  <p>Your saved movies and TV shows.</p>
+</section>
+
+<section class="fav-grid">
+
+
+  <div class="fav-card">
+    <button class="remove-btn">🖤</button>
+    <img src="inter.jfif">
+
+    <div class="card-content">
+      <h3>Interstellar</h3>
+      <div class="info">
+        <span>2014</span>
+        <span>Sci-Fi</span>
+      </div>
+      <div class="rating">⭐ 8.7</div>
+    </div>
+  </div>
+
+  <div class="fav-card">
+    <button class="remove-btn">🖤</button>
+    <img src="Cillian Murphy _ _Peaky Blinders___.jfif">
+
+    <div class="card-content">
+      <h3>Peaky Blinders</h3>
+      <div class="info">
+        <span>2013</span>
+        <span>Crime</span>
+      </div>
+      <div class="rating">⭐ 9.0</div>
+    </div>
+  </div>
+
+  <div class="fav-card">
+    <button class="remove-btn">🖤</button>
+    <img src="bb.jfif">
+
+    <div class="card-content">
+      <h3>Breaking Bad</h3>
+      <div class="info">
+        <span>2008–2013</span>
+        <span>Crime</span>
+      </div>
+      <div class="rating">⭐ 9.5</div>
+    </div>
+  </div>
+
+  <div class="fav-card">
+    <button class="remove-btn">🖤</button>
+    <img src="25 Captivating Korean Movies to Stream on Netflix This Weekend.jfif">
+
+    <div class="card-content">
+      <h3>Train To Busan </h3>
+      <div class="info">
+        <span>2016</span>
+        <span>Action/Horror</span>
+      </div>
+      <div class="rating">⭐ 9.0</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CLEAR BUTTON -->
+<div class="clear-section">
+  <button class="clear-btn">🗑 Clear All Favourites</button>
+</div>
+
+</body>
+</html>
